@@ -1,7 +1,9 @@
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl text-violet-700">DevFlow</h1>
+      <h1 className=" h1-bold  background-light850_dark100">
+        Welcome to the world of next js
+      </h1>
     </div>
   );
 };
