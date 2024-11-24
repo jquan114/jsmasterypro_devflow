@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
 import React from "react";
 import Navbar from "@/components/navigation/navbar";
+import { ThemeProvider } from "next-themes";
 
 const inter = localFont({
   src: "./fonts/InterVF.ttf",
