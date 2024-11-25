@@ -56,6 +56,10 @@ const config: Config = {
         inter: ["var(--font-inter)"],
         "space-grotesk": ["var(--font-space-grotesk)"],
       },
+      backgroundimage: {
+        "auth-dark": 'url("/images/auth-dark.png")',
+        "auth-light": 'url("/images/auth-light.png")',
+      },
     },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
