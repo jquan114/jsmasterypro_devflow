@@ -7,7 +7,7 @@ const Home = async () => {
   return (
     <>
       <h1 className=" h1-bold  background-light850_dark100">
-        Welcome to the world of next js
+        A place where christians can unite as one.
       </h1>
     </>
   );
