@@ -5,8 +5,8 @@ import { formUrlQuery, removeKeysFromUrlQuery } from "@/lib/url";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 const filters = [
-  { name: "Christ", value: "Jesus" },
-  { name: "Savior", value: "Real" },
+  { name: "Christ", value: "Christ" },
+  { name: "Savior", value: "Savior" },
   { name: "Newest", value: "Newest" },
   { name: "Popular", value: "Popular" },
   // { name: "Unanswered", value: "unanswered" },
