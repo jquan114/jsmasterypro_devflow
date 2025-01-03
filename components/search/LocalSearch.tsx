@@ -1,9 +1,11 @@
 "use client";
-import React, { use, useEffect, useState } from "react";
-import { Input } from "../ui/input";
 import Image from "next/image";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
+
 import { formUrlQuery, removeKeysFromUrlQuery } from "@/lib/url";
+
+import { Input } from "../ui/input";
 
 interface Props {
   route: string;
@@ -13,20 +15,20 @@ interface Props {
 }
 
 const LocalSearch = ({ route, imgSrc, placeholder, otherClasses }: Props) => {
-  //pathname
+  // pathname
   const pathname = usePathname();
 
   const router = useRouter();
-  //search params
+  // search params
   const searchParams = useSearchParams();
-  //query
+  // query
   const query = searchParams.get("query") || "";
-  //useState searchQuery
+  // useState searchQuery
 
   const [searchQuery, setSearchQuery] = useState(query);
 
   useEffect(() => {
-    //delay
+    // delay
 
     const delayDebounceFn = setTimeout(() => {
       if (searchQuery) {
