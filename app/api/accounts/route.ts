@@ -8,6 +8,7 @@ import { AccountSchema } from "@/lib/validations";
 
 export async function GET() {
   try {
+    // db connection
     await dbConnect();
 
     const accounts = await Account.find();
