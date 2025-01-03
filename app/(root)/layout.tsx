@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import React, { ReactNode } from "react";
 
 import LeftSidebar from "@/components/navigation/LeftSidebar";
