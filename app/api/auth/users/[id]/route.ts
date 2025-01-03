@@ -7,6 +7,7 @@ import dbConnect from "@/lib/mongoose";
 import { UserSchema } from "@/lib/validations";
 
 // GET /api/users/[id]
+// GET /api/users/[id]
 export async function GET(
   _: Request,
   { params }: { params: Promise<{ id: string }> }
