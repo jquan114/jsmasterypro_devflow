@@ -22,7 +22,7 @@ const spaceGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DevFlow",
+  title: "Christian Unitied",
   description:
     "A community-driven platform for asking and answering questions for believers in Christ Jesus. Get help, share knowledge, and collaborate with people around the world. Explore topics in the bible and more.",
   icons: {
