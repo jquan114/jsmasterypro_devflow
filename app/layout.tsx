@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SessionProvider } from "next-auth/react";
@@ -23,7 +24,7 @@ const spaceGrotesk = localFont({
 export const metadata: Metadata = {
   title: "DevFlow",
   description:
-    "A community-driven platform for asking and answering programming questions. Get help, share knowledge, and collaborate with developers from around the world. Explore topics in web development, mobile app development, algorithms, data structures, and more.",
+    "A community-driven platform for asking and answering questions for believers in Christ Jesus. Get help, share knowledge, and collaborate with people around the world. Explore topics in the bible and more.",
   icons: {
     icon: "/images/site-logo.svg",
   },
@@ -52,6 +53,7 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
             disableTransitionOnChange
           >
             {children}
+            <SpeedInsights />
           </ThemeProvider>
           <Toaster />
         </body>
