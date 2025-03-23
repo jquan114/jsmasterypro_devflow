@@ -106,7 +106,11 @@ const QuestionForm = ({ question, isEdit = false }: Params) => {
             description: "Question updated successfully",
           });
 
-          if (result.data) router.push(ROUTES.QUESTION(result.data._id));
+          if (result.data && typeof result.data._id === "string") {
+            router.push(ROUTES.QUESTION(result.data._id));
+          } else {
+            console.error("Invalid ID or ID type:", result.data);
+          }
         } else {
           toast({
             title: `Error ${result.status}`,
@@ -126,7 +130,11 @@ const QuestionForm = ({ question, isEdit = false }: Params) => {
           description: "Question created successfully",
         });
 
-        if (result.data) router.push(ROUTES.QUESTION(result.data._id));
+        if (result.data && typeof result.data._id === "string") {
+          router.push(ROUTES.QUESTION(result.data._id));
+        } else {
+          console.error("Invalid ID or ID type:", result.data);
+        }
       } else {
         toast({
           title: `Error ${result.status}`,
