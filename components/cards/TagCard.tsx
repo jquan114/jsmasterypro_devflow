@@ -33,6 +33,7 @@ const TagCard = ({
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
   };
+
   const Content = (
     <>
       <Badge className="subtle-medium background-light800_dark300 text-light400_light500 flex flex-row gap-2 rounded-md border-none px-4 py-2 uppercase">
@@ -40,6 +41,7 @@ const TagCard = ({
           <i className={`${iconClass} text-sm`}></i>
           <span>{name}</span>
         </div>
+
         {remove && (
           <Image
             src="/icons/close.svg"
@@ -57,13 +59,14 @@ const TagCard = ({
       )}
     </>
   );
+
   if (compact) {
     return isButton ? (
       <button onClick={handleClick} className="flex justify-between gap-2">
         {Content}
       </button>
     ) : (
-      <Link href={ROUTES.TAGS(_id)} className="flex justify-between gap-2">
+      <Link href={ROUTES.TAG(_id)} className="flex justify-between gap-2">
         {Content}
       </Link>
     );
